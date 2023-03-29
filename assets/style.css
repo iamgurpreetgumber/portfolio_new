@@ -1,0 +1,67 @@
+.grid-container {
+  max-width: 1300px !important;
+  width: 100% !important;
+}
+
+.main__container {
+  padding: 0px 40px;
+  position: relative;
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+
+.banner__container {
+  position: relative;
+  /* max-width: 1200px; */
+  width: 100%;
+  color: var(--accent);
+}
+
+.banner__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: start;
+  justify-content: center;
+  align-content: center;
+  /* background-image: url('../assets/img/banner-curve.png'); */
+}
+
+.author__firstname,
+.author__lastname {
+  font-size: calc(72px + 6 * ((100vw - 640px) / 680));
+  font-weight: 900;
+}
+
+.author__lastname {
+  text-shadow: 1px 1px 5px var(--accent);
+  color: white;
+}
+
+.banner__hero__image{
+  width: 100%;
+  height: auto;
+  float: right;
+}
+
+
+.banner__hero__image img{
+  width: 100%;
+  min-height: 250px;
+  max-height: 750px;
+}
+
+.author__desc__content{
+  font-size: calc(36px + 6 * ((100vw - 640px) / 680));
+}
+
+.quotes{
+  display: none;
+}
+
+.custom__btn{
+  border-radius: var(--border-radius);
+  background: rgb(36,156,186);
+  background: linear-gradient(50deg, rgba(36,156,186,1) 32%, rgba(2,74,89,1) 100%, rgba(36,156,186,1) 100%);
+}
